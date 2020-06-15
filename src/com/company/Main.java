@@ -30,6 +30,7 @@ public class Main {
             System.out.println("Press 0 to exit");
             choice = scan.nextInt();
             switch (choice){
+                //sadasd
                 case 1:
                     System.out.println("Please enter the degrees in celsius that you want to convert");
                     celsius = scan.nextDouble();
