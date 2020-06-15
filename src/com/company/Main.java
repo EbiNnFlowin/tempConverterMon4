@@ -42,7 +42,38 @@ public class Main {
                     kelvin = celsius + 273.15;
                     System.out.println(celsius + " degrees is equal to "+ kelvin+" degrees kelvin");
                     break;
-                
+                case 3:
+                    System.out.println("Please enter the degrees in Fahrenheit");
+                    fahrenheit = scan.nextDouble();
+                    celsius = ((fahrenheit - 32) * (5.0/9.0));
+                    System.out.println(fahrenheit+ " fahrenheit is "+ celsius + " degrees celsius");
+                    break;
+                case 4:
+                    System.out.println("Please enter the degrees in Fahrenheit");
+                    fahrenheit = scan.nextDouble();
+                    kelvin = (((fahrenheit - 32) * (5.0/9.0))+273.15);
+                    System.out.println(fahrenheit+ " fahrenheit is "+ kelvin + " degrees kelvin");
+                    break;
+                case 5:
+                    System.out.println("Please enter the degrees in Kelvin");
+                    kelvin = scan.nextDouble();
+                    celsius = kelvin - 273.15;
+                    System.out.println(kelvin+ " kelvin is "+ celsius + " degrees celsius");
+                    break;
+                case 6:
+                    System.out.println("Please enter the degrees in Kelvin");
+                    kelvin = scan.nextDouble();
+                    fahrenheit = (((kelvin - 273.15)*(9.0/5))+32);
+                    System.out.println(kelvin+ " kelvin is "+ fahrenheit + " degrees fahrenheit");
+                    break;
+
+                case 0:
+                    System.out.println("Thank you, see you later");
+                    break;
+                default:
+                    System.out.println("ERROR! INVALID INPUT");
+
+
 
             }
 
